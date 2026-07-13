@@ -1,0 +1,262 @@
+/* ==========================
+   Ganda Glow - style.css
+========================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8F5;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #F8BBD0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header h1 {
+    color: #E91E63;
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E91E63;
+}
+
+/* Hero */
+.hero {
+    background: #FCE4EC;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #E91E63;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #E91E63;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background: #C2185B;
+}
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* About */
+.about {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #E91E63;
+    margin-bottom: 20px;
+}
+
+/* Featured Products */
+.featured {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.featured h2 {
+    color: #E91E63;
+    margin-bottom: 30px;
+}
+
+.collection-image {
+    width: 100%;
+    max-width: 850px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.collection-text {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* Product Cards */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.product-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+}
+
+.product-item h3 {
+    color: #E91E63;
+    margin-bottom: 12px;
+}
+
+.product-item strong {
+    color: #E91E63;
+    font-size: 20px;
+}
+
+/* Why Choose */
+.why {
+    padding: 60px 30px;
+    background: white;
+    text-align: center;
+}
+
+.why h2 {
+    color: #E91E63;
+    margin-bottom: 35px;
+}
+
+.why-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.why-card {
+    width: 250px;
+    background: #FCE4EC;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.why-card h3 {
+    color: #E91E63;
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+form label {
+    color: #E91E63;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #F8BBD0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #E91E63;
+}
+
+form button {
+    background: #E91E63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #C2185B;
+}
+
+/* Footer */
+footer {
+    background: #F8BBD0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
